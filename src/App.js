@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import menus from "./data";
 import Categories from "./Components/Categories";
+import Menu from "./Components/Menu";
 
 const allCategories = ["All", ...new Set(menus.map((item) => item.category))];
 
@@ -15,7 +16,8 @@ function App() {
         <div className="title">
           <h2>Menu</h2>
           <div className="underline">
-            <Categories category={catogories}></Categories>
+            <Categories category={catogories} />
+            <Menu menu={menu} />
           </div>
         </div>
       </section>
