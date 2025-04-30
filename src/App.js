@@ -24,10 +24,9 @@ function App() {
       <section className="menu section">
         <div className="title">
           <h2>Menu</h2>
-          <div className="underline">
-            <Categories category={catogories} filterMenu={filterMenu} />
-            <Menu menu={menu} />
-          </div>
+          <div className="underline"></div>
+          <Categories category={catogories} filterMenu={filterMenu} />
+          <Menu menu={menu} />
         </div>
       </section>
     </main>
